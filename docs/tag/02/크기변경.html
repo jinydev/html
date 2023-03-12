@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JinyDev CSS</title>
+
+    <link rel="stylesheet" href="github-markdown.css">
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        .markdown-body h1 {
+            padding-bottom: 5px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .markdown-body h2 {
+            padding-top: 10px;
+        }
+
+        .markdown-body h3 {
+            padding-top: 5px;
+        }
+
+        .markdown-body h4 {
+            padding-top: 3px;
+        }
+
+        .markdown-body h5 {
+            padding-top: 2px;
+        }
+
+        .markdown-body h6 {
+            padding-top: 1px;
+        }
+
+
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <header>
+            <a href="/">프로트엔드 개발을 위한 HTML 학습하기</a>
+        </header>
+        <main>
+            <div class="markdown-body">
+                <h1 id="텍스트-크기-변경">텍스트 크기 변경</h1>
+
+<h2 id="폰트사이트">폰트사이트</h2>
+
+<p>웹 문서에서 텍스트의 크기를 조절하기 위해서 사용하는 단위는 다음과 같다.</p>
+
+<ul>
+  <li>픽셀(px)</li>
+  <li>포인토(pt)</li>
+  <li>엠(em)</li>
+  <li>퍼센티지(%)</li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"font-size:크기단위;"</span><span class="nt">&gt;</span>내용<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<h2 id="픽셀pixel">픽셀(pixel)</h2>
+
+<p>화면 스크린의 화소를 단위로 하는 방식이다.</p>
+
+<p>그런데 이 방식은 각 화면의 해상도, 큭히 ppi에 따라서 크기가 달라지는 문제가 있기  때문에 문제가 있다.</p>
+
+<p>텍스트의 크기를 지정하지 않는다면 서체의 기본 크기인 16픽셀로 나타나게 된다.</p>
+
+<h2 id="포인트point">포인트(point)</h2>
+
+<p>전통적인 서체의 크기 단위이다.</p>
+
+<p>1인티가 72pt이고, 통상의 pc 화면 해상도가 96dpi 이므로 12pt이면 16px에 해당한다.</p>
+
+<p>우리가 가장 많이 사용하는 대부분의 브라우저의 표준 서체 크기가 18px이다.</p>
+
+<p>텍스트의 크기를 지정하지 않는다면 서체의 기본 크기인 12포인트로 나타나게 된다.</p>
+
+<h2 id="em">EM</h2>
+
+<p>브라우저의 기준 서체 크기를 1em으로 정의하고, 이 크기에 상대적으로 지정하는 방식이다.</p>
+
+<p>따라서 이용자가 브라우저의 환경설정에서 기준 서체의 크기를 변경하면 서체 크기가 이에 따라서 가변적으로 변경된다.</p>
+
+<p>서체의 기본 크기는 1em으로 나타나게 된다.</p>
+
+<h2 id="퍼센트percent">퍼센트(percent)</h2>
+
+<p>em과 동일하지만, 표준 서체의 크기를 100%로 지정하는 것이 다르다.</p>
+
+<p>텍스트의 크기를 지정하지 않는다면 서체의 기본 크기인 100%로 나타나게 된다.</p>
+
+<p><img src="./img/html502_21.png" alt="html502_21" /></p>
+
+<p><img src="./img/html502_22.png" alt="html502_22" /></p>
+
+            </div> 
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JinyDev CSS</title>
+
+    <link rel="stylesheet" href="github-markdown.css">
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        .markdown-body h1 {
+            padding-bottom: 5px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .markdown-body h2 {
+            padding-top: 10px;
+        }
+
+        .markdown-body h3 {
+            padding-top: 5px;
+        }
+
+        .markdown-body h4 {
+            padding-top: 3px;
+        }
+
+        .markdown-body h5 {
+            padding-top: 2px;
+        }
+
+        .markdown-body h6 {
+            padding-top: 1px;
+        }
+
+
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <header>
+            <a href="/">프로트엔드 개발을 위한 HTML 학습하기</a>
+        </header>
+        <main>
+            <div class="markdown-body">
+                <h1 id="테이블-태그와-함께-사용하는-태그들">테이블 태그와 함께 사용하는 태그들</h1>
+
+<h2 id="테이블-관련-태그들">테이블 관련 태그들</h2>
+
+<p>앞에서 설명한 형식처럼 table 태그와 /table 태그 사이에는 tr 이나 td 같은 다른 태그들을 사용해서 셀을 만들게 된다.</p>
+
+<p>table 태그와 /table 태그 사이에서 사용할 수 있는 태그는 다음과 같다.</p>
+
+<ul>
+  <li>cation : 표에 대한 제목이나 간단한 설명을 삽입, 표의 위쪽 가운데에 표시된다.</li>
+  <li>th : 표의 한 칸을 지정하느데, 이 칸 안의 내용들은 제목으로 설정되어 진하게 표시된다.</li>
+  <li>tr:표의 한줄을 지정한다.</li>
+  <li>td: 표의 한 칸을 지정한다.</li>
+</ul>
+
+<p><img src="./img/html505_16.png" alt="html505_16" /></p>
+
+<p>앞의 소스에서 보는 것처럼, 아무것도 들어기지 않는 빈 셀은 width 속성으로 크기를 지정해 주는 좋이 좋다</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;td width="200"&gt; &amp;nbsp; &lt;/td&gt;
+</code></pre></div></div>
+
+<p>그리고 공백 문자를 나타내는 <code class="language-plaintext highlighter-rouge">&amp;nbsp;</code>를 써준다.</p>
+
+<p><img src="./img/html505_17.png" alt="html505_17" /></p>
+
+            </div> 
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+   
+</body>
+</html>

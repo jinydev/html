@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JinyDev CSS</title>
+
+    <link rel="stylesheet" href="github-markdown.css">
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        .markdown-body h1 {
+            padding-bottom: 5px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .markdown-body h2 {
+            padding-top: 10px;
+        }
+
+        .markdown-body h3 {
+            padding-top: 5px;
+        }
+
+        .markdown-body h4 {
+            padding-top: 3px;
+        }
+
+        .markdown-body h5 {
+            padding-top: 2px;
+        }
+
+        .markdown-body h6 {
+            padding-top: 1px;
+        }
+
+
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <header>
+            <a href="/">프로트엔드 개발을 위한 HTML 학습하기</a>
+        </header>
+        <main>
+            <div class="markdown-body">
+                <h1 id="순서-없는-목록">순서 없는 목록</h1>
+
+<p>순서 없는 목록(Unordered List)은 항목들의 순서가 중요하지 않을 때 사용한다.</p>
+
+<p>즉, 항목 앞에 번호가 붙지 않고 작은 원이나 사격형을 붙여서 표시한다. 이렇게 항목 앞에 붙는 작은 그림을 블릿(bullet)이라고 한다.</p>
+
+<p><img src="./img/html502_37.png" alt="html502_37" /></p>
+
+<h2 id="ul테그와-li태그">UL테그와 LI태그</h2>
+
+<p>순서 없는 목록을 만들 때 사용하는 태그는 <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code>과 <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code>이다.</p>
+
+<p>목록으로 표시할 내용의 앞 뒤에 <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code>과 <code class="language-plaintext highlighter-rouge">&lt;/ul&gt;</code>태그를 적고 각 항목 앞에 <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code>태그를 붙이면 된다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;li&gt;</code>태그의 닫는 태그, 즉 <code class="language-plaintext highlighter-rouge">&lt;/li&gt;</code>는 생략할 수 있는데 이를 생략할 경우 <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code>뒤부터 다음 <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code>이전 까지가 하나의 항목이 된다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ul&gt;
+	&lt;li&gt;항목1&lt;/li&gt;
+	&lt;li&gt;항목2&lt;/li&gt;
+	&lt;li&gt;항목3&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre></div></div>
+
+<p>순서 없는 목록에서는 <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code>태그의 type 속성으로 불릿을 조절할 수 있다.</p>
+
+<p>변경할 수 있는 종류는 원, 검은 원, 그리고 검은 사각형이다.</p>
+
+<p>지정하지 않는 경우 검은 원이 표시됩니다.</p>
+
+<ul>
+  <li>type=”disc”</li>
+  <li>type=”circle”</li>
+  <li>type=”square”</li>
+</ul>
+
+<p><img src="./img/html502_39.png" alt="html502_39" /></p>
+
+<p><img src="./img/html502_40.png" alt="html502_40" /></p>
+
+            </div> 
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JinyDev CSS</title>
+
+    <link rel="stylesheet" href="github-markdown.css">
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        .markdown-body h1 {
+            padding-bottom: 5px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .markdown-body h2 {
+            padding-top: 10px;
+        }
+
+        .markdown-body h3 {
+            padding-top: 5px;
+        }
+
+        .markdown-body h4 {
+            padding-top: 3px;
+        }
+
+        .markdown-body h5 {
+            padding-top: 2px;
+        }
+
+        .markdown-body h6 {
+            padding-top: 1px;
+        }
+
+
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <header>
+            <a href="/">프로트엔드 개발을 위한 HTML 학습하기</a>
+        </header>
+        <main>
+            <div class="markdown-body">
+                <h1 id="vscode-extention-for-html">VSCode Extention for HTML</h1>
+<p>html 및 css 코드를 편하게 작성할 수 있도록 vscode 확장팩을 설치합니다.</p>
+
+<h2 id="bracket-pair-colorization-toggler">Bracket Pair Colorization Toggler</h2>
+<p>코드블럭을 표현할때 <code class="language-plaintext highlighter-rouge">시작</code>과 <code class="language-plaintext highlighter-rouge">끝</code>을 쉽게 찾을 수 있도록 색상으로 분리하여 표시를 합니다.</p>
+
+<p><img src="./img/image-20230207192824104.png" alt="image-20230207192824104" /></p>
+
+<h2 id="indent-colorizer">indent-colorizer</h2>
+<p>들여쓰기를 할때 다양한 칼라로 코드의 정렬 위치를 파악할 수 있습니다.</p>
+
+<p><img src="./img/image-20230207193015782.png" alt="image-20230207193015782" /></p>
+
+<h2 id="auto-rename-tag">Auto Rename Tag</h2>
+<p>HTML은 한 쌍의 테그로 작성이 됩니다. 만일 시작 테그를 변경하면, 대칭되는 종료 테그도 자동으로 변경을 해주게 됩니다.</p>
+
+<p><img src="./img/image-20230207193207200.png" alt="image-20230207193207200" /></p>
+
+<h2 id="auto-close-tag">auto Close Tag</h2>
+<p>자동으로 테그를 닫아 줍니다.</p>
+
+<p><img src="./img/image-20230207195832862.png" alt="image-20230207195832862" /></p>
+
+<h3 id="htmltagwrap">htmltagwrap</h3>
+<p>만일 엘리먼트를 감쌀때 여러분은 어떻게 하는가?
+수동으로 일일히 태그를 적어주어 포함시키는데, 이제는 블록을 감쌀때 더이상 이리저리 마우스 키보드 조작 할 필요없이 단축키 하나만으로 감쌀 수 있다.</p>
+<ul>
+  <li>감싸고자 하는 블록에 놓고 alt + w</li>
+</ul>
+
+<p><img src="./img/image-20230207200000876.png" alt="image-20230207200000876" /></p>
+
+<h2 id="highlight-matching-tag">Highlight Matching Tag</h2>
+<p>여러 태그가 중첩되어 있을 때 해당 태그의 끝이 어디인지 찾기 힘들 때가 있다. 그럴 때 쌍이 되는 태그를 표시해 주는 플러그인이다.
+vs code 자체에도 태그를 누르면 하이라이트가 되는 기능이 포함되어 있지만 해당 태그의 이름(div, p, input 등)을 눌러야지 표시가 된다. 하지만 이 익스텐션은 태그 내 아무곳이나 눌러도 태그를 하이라이트 표시해서 블록을 쉽게 알수 있게 한다.</p>
+
+<p><img src="./img/image-20230207200154912.png" alt="image-20230207200154912" /></p>
+
+<h2 id="css-peak">CSS Peak</h2>
+<p>HTML 문서에서 사용되는 css를 쉽게 찾아 줄수 있는 확장 패키지 입니다. css 클래스를 <code class="language-plaintext highlighter-rouge">crtl</code> + <code class="language-plaintext highlighter-rouge">클릭</code> 형태로 바로 갈 수 있습니다.</p>
+
+<p><img src="./img/image-20230207193408010.png" alt="image-20230207193408010" /></p>
+
+<h2 id="html-to-css-autocompletion">HTML to CSS autocompletion</h2>
+<p>HTML문서에서 먼저 CSS 클래스를 사용하고, CSS 문서를 사용할때 자동으로 클래스명을 완성해 줍니다.
+CSS Peak과 반대로 css가 사용된 html의 위치를 찾아 줍니다.</p>
+
+<p><img src="./img/image-20230207193732764.png" alt="image-20230207193732764" /></p>
+
+<h2 id="html-css-support">HTML CSS Support</h2>
+<p>CSS 스타일된 클래스를 HTML에서 쉽게 바로 쓸수 있도록 자동완성을 지원합니다.</p>
+
+<p><img src="./img/image-20230207194028525.png" alt="image-20230207194028525" /></p>
+
+<h2 id="live-server">Live Server</h2>
+<p>HTML 문서를 로컬 웹서버로 실행을 할 수 있으며, 수정중에도 새로고침 없이 바로 수정된 내용을 확인할 수 있습니다.</p>
+
+<p><img src="./img/image-20230207194253796.png" alt="image-20230207194253796" /></p>
+
+<h2 id="prettier-code-formatter">Prettier-code formatter</h2>
+<p>코드를 보기 좋게 정렬해 주는 확장 기능입니다.</p>
+
+<p><img src="./img/image-20230207194439355.png" alt="image-20230207194439355" /></p>
+
+<p>vscode 환경설정에서 <code class="language-plaintext highlighter-rouge">format on save</code> 을 검색합니다. 이부분을 체크 합니다.</p>
+
+<p><img src="./img/image-20230207194709725.png" alt="image-20230207194709725" /></p>
+
+<blockquote>
+  <p>선택 : prettier single quote 를 체크합니다. 더블 따옴표를 단일 따옴포를 변경합니다.<img src="./img/image-20230207195150802.png" alt="image-20230207195150802" /></p>
+</blockquote>
+
+<p>default fomatter 에서 prettier 로 설정을 합니다.</p>
+
+<p><img src="./img/image-20230207195334793.png" alt="image-20230207195334793" /></p>
+
+<blockquote>
+  <p>Prettier php 플러그인 설치</p>
+
+</blockquote>
+
+<h2 id="lorem">Lorem</h2>
+
+<p><img src="./img/image-20230207194901487.png" alt="image-20230207194901487" /></p>
+
+<h3 id="image-preview"><strong>image preview</strong></h3>
+<ul>
+  <li>코드라인 번호 왼쪽에 이미지가 나타난다.</li>
+  <li>이미지 url에 마우스를 올려놓으면 프리뷰 이미지를 볼수 있다.</li>
+</ul>
+
+<p><img src="./img/image-20230207200519566.png" alt="image-20230207200519566" /></p>
+
+<h2 id="color-highlight">color Highlight</h2>
+
+<p><img src="./img/image-20230207201157351.png" alt="image-20230207201157351" /></p>
+
+<h2 id="format-html-in-php">Format HTML in PHP</h2>
+
+<p><img src="./img/image-20230207201327764.png" alt="image-20230207201327764" /></p>
+
+            </div> 
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+   
+</body>
+</html>

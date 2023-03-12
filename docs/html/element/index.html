@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JinyDev CSS</title>
+
+    <link rel="stylesheet" href="github-markdown.css">
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        .markdown-body h1 {
+            padding-bottom: 5px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .markdown-body h2 {
+            padding-top: 10px;
+        }
+
+        .markdown-body h3 {
+            padding-top: 5px;
+        }
+
+        .markdown-body h4 {
+            padding-top: 3px;
+        }
+
+        .markdown-body h5 {
+            padding-top: 2px;
+        }
+
+        .markdown-body h6 {
+            padding-top: 1px;
+        }
+
+
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <header>
+            <a href="/">프로트엔드 개발을 위한 HTML 학습하기</a>
+        </header>
+        <main>
+            <div class="markdown-body">
+                <h1 id="html-요소란">HTML 요소란?</h1>
+<p>HTML의 요소란 <code class="language-plaintext highlighter-rouge">태그(tag)</code>의 또다른 표현법 입니다.</p>
+
+<h2 id="태그">태그</h2>
+<p>태그는 HTML 페이지에서 객체를 만들 때 사용하는 것입니다. 그리고 태그를 사용해 만들어진 객체를 요소라고 부릅니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>Hello World<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<p>위의 예에서 <code class="language-plaintext highlighter-rouge">Hello World</code> 문장을 특수한 기호 <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code>와 <code class="language-plaintext highlighter-rouge">&lt;/p&gt;</code>로 감싸져 있는 것을 볼 수 있습니다.
+이렇게 출력할 문장을 감싸고 있는 특수기호를 HTML에서는 태그라고 합니다.</p>
+
+<h3 id="태그의-특징">태그의 특징</h3>
+<p>태그는 일반적으로 <code class="language-plaintext highlighter-rouge">시작태그</code>와 <code class="language-plaintext highlighter-rouge">종료태그</code>로 되어 있습니다. 하지만 일부 몇몇 태그는 종료태그가 없는 <code class="language-plaintext highlighter-rouge">단일 태그</code>도 있습니다.</p>
+
+<h3 id="단일태그">단일태그</h3>
+<p><code class="language-plaintext highlighter-rouge">&lt;br&gt;</code> 태그는 문장의 출력을 다음줄에서 시작하라는 구분 태그 입니다. 대표적으로 종료가 없는 태그 입니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hwllo
+<span class="nt">&lt;br&gt;</span>
+World
+</code></pre></div></div>
+
+<p>예시와 같이 단일로 작성합니다.</p>
+
+<p>HTML5에서는 단일태그를 사용할때 혼돈을 줄이기 위하여 <code class="language-plaintext highlighter-rouge">&lt;br/&gt;</code>형태로 사용을 하는 것을 권장합니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;br/&gt;</span>
+</code></pre></div></div>
+<blockquote>
+  <p>어떠한표기 방법을 사용해도 상관없지만 대부분의 개발지는 XHTML5 방법을선호합니다.</p>
+</blockquote>
+
+<h3 id="태그의-중첩">태그의 중첩</h3>
+<p>일부 태그는 태그 내부에 다른 태그를 넣을 수 있습니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;header&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello World<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">header</code> 태그 안에는 <code class="language-plaintext highlighter-rouge">h1</code> 태그를 감싸고 있습니다.</p>
+
+<blockquote>
+  <p>그는모두W3C 재단에서 미리 정해놓았습니다</p>
+</blockquote>
+
+<h2 id="속성">속성</h2>
+<p>HTML 태그는 출력될 문장 또는 내용을 감싸는 형태로 가지고 있습니다. 이와 별개로 테그에 속성을 부여하여 더 많은 마크업 동작이 가능하도록 설정할 수 있습니다.</p>
+
+<p>즉 속성은 태그의 추가적인 정보를 지정할때 사용합니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1</span> <span class="na">title=</span><span class="s">"header"</span><span class="nt">&gt;</span>Hello World<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p>속성은 시작태그 또는 단일테그 안에 속성명과 값을 지정합니다.</p>
+
+<blockquote>
+  <p>속성의 종류는 W3C 재단에서 표준으로 정의해 놓았습니다.</p>
+</blockquote>
+
+
+            </div> 
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+   
+</body>
+</html>

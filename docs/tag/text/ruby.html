@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JinyDev CSS</title>
+
+    <link rel="stylesheet" href="github-markdown.css">
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        .markdown-body h1 {
+            padding-bottom: 5px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .markdown-body h2 {
+            padding-top: 10px;
+        }
+
+        .markdown-body h3 {
+            padding-top: 5px;
+        }
+
+        .markdown-body h4 {
+            padding-top: 3px;
+        }
+
+        .markdown-body h5 {
+            padding-top: 2px;
+        }
+
+        .markdown-body h6 {
+            padding-top: 1px;
+        }
+
+
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <header>
+            <a href="/">프로트엔드 개발을 위한 HTML 학습하기</a>
+        </header>
+        <main>
+            <div class="markdown-body">
+                <h1 id="루비-문자">루비 문자</h1>
+<hr />
+<p>아시아 문화권을 위한 글자 출력을 도와주는 테그 입니다.</p>
+
+<blockquote>
+  <p>ruby 문자의 처리는 브라우저 마다 다르게 처리합니다.</p>
+</blockquote>
+
+<h2 id="루비문자-적용사례">루비문자 적용사례</h2>
+<p>일본어 문화권의 언어를 보면, 한자위에 작게 일본어를 같이 표기해 놓은 것을 볼 수 있습니다. 이러한 글자표기를 웹에서 처리해야 할때 루비 문자를 작성합니다.</p>
+
+<h2 id="rt-테그">rt 테그</h2>
+<p>ruby 테그는 rt테그와 함께 사용합니다.
+ruby 태그를 지원하지 않는 웹 브라우저에서 태그가 정상적으로 촐력될 수 있게 만든 태그가 rp 태그 
+입니다.</p>
+
+<blockquote>
+  <p>rp 대그는 ruby 태그를 지원하는 웹 브라우저에서는출력되지 않습니다.</p>
+</blockquote>
+
+<h2 id="발음기호">발음기호</h2>
+<hr />
+<p>아시아의 문자의 경우, 글자의 발음기호등의 표시를 같이 하는 경우가 있습니다.<br />
+이때 글씨의 위에 작은 글씨로 보조 설명을 넣게 되는데 이를 루비 문자라고 합니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;rudy&gt;</span>
+    <span class="nt">&lt;span&gt;</span>대한민국<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;rt&gt;</span>대한민국<span class="nt">&lt;/rt&gt;</span>
+<span class="nt">&lt;/ruby&gt;</span>
+</code></pre></div></div>
+
+
+            </div> 
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+   
+</body>
+</html>

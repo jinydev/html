@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JinyDev CSS</title>
+
+    <link rel="stylesheet" href="github-markdown.css">
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        .markdown-body h1 {
+            padding-bottom: 5px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .markdown-body h2 {
+            padding-top: 10px;
+        }
+
+        .markdown-body h3 {
+            padding-top: 5px;
+        }
+
+        .markdown-body h4 {
+            padding-top: 3px;
+        }
+
+        .markdown-body h5 {
+            padding-top: 2px;
+        }
+
+        .markdown-body h6 {
+            padding-top: 1px;
+        }
+
+
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <header>
+            <a href="/">프로트엔드 개발을 위한 HTML 학습하기</a>
+        </header>
+        <main>
+            <div class="markdown-body">
+                <h1 id="문서구조">문서구조</h1>
+<p>HTML 문서 포맷의 구조는 어떻게 되는지에 대해서 알아 보도록 합니다.</p>
+
+<h2 id="문서포맷">문서포맷</h2>
+<p>이전에서는 <code class="language-plaintext highlighter-rouge">hello world</code> 문자열을 웹 브라우저로 출력을 하였습니다.</p>
+
+<p>최신 웹 브라우저는 기능이 많이 좋아져서, html 문서 규격을 맞지 않아도 정상적으로 우리가 원하는 문자열을 화면에 출력을 할 수 있습니다.<br />
+하지만, 정상적인 웹페이지를 화면 출력 하기 위해서는 html 문서구조를 맞추어 주어야 합니다.</p>
+
+<h2 id="문서타입">문서타입</h2>
+<p>작성된 코드가 html 형태의 파일임을 알리는 코드를 첫줄에 작성을 합니다.
+html 문서의 버전을 관리합니다. 5.x 이전에는 복잡하고 다양한 형태의 문서 버전 규격을 적용하였습니다.</p>
+
+<p>하지만 5.x 부터는 다음과 같이 간단하게 html 버전을 지정할 수 있습니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">doctype</code>은 대문자, 소문자 모두 사용이 가능합니다. 하지만 선언문에 반드시 <code class="language-plaintext highlighter-rouge">html</code>이라는 문자가 같이 들어가 있어야 합니다.</p>
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">&lt;!DOCTYPE html&gt;</code> 태그는 웹 브라우저가 현재 웹 페이지가 HTMLS 문서임을 인식하게 만들어 줍니다.</p>
+</blockquote>
+
+<h2 id="해더">해더</h2>
+<p>html 파일은 크게 2개의 영역이 존재합니다. 문서의 정보를 출력하는 영역 입니다.<br />
+문서의 정보를 담고 있는 head 영역과 실제 내용을 담고 있는 body 입니다.</p>
+
+<blockquote>
+  <p>head 태그는 body 태그에서 필요한스타일시트와자바스크립트를 제공하는데 사용합니다.</p>
+</blockquote>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span> 
+<span class="nt">&lt;/head&gt;</span>
+</code></pre></div></div>
+
+<p><a href="head">학습하기</a></p>
+
+<h2 id="바디">바디</h2>
+<p>문서의 내용을 출력합니다.<br />
+body 태그는사용자에게 보이는실제 부분입니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</code></pre></div></div>
+
+<p><a href="body">학습하기</a></p>
+
+<h2 id="html-테그">html 테그</h2>
+<p>앞에서 우리는 간단하게 테그의 기본에 대해서 학습을 하였습니다.<br />
+html 문서는 html 테그를 기반으로 작성을 하게 됩니다.</p>
+
+<p>html문서의 시작과 끝은 <code class="language-plaintext highlighter-rouge">html</code> 테그로 감싸져 있습니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+<p>그리고 2개의 영역은 <code class="language-plaintext highlighter-rouge">&lt;html&gt;&lt;/html&gt;</code> 테그로 감싸져 있습니다.</p>
+
+<h3 id="문서의-최상의-루트">문서의 최상의 루트</h3>
+<p>html 테그는 문서의 최상의 <code class="language-plaintext highlighter-rouge">루트</code> 요소를 의미합니다.</p>
+
+<h3 id="언어속성">언어속성</h3>
+<p>html 테그에는 속성값으로 문서의 언어 포맷을 같이 지정하기도 합니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"ko"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>lang 속성은 문서가 어떤 문화권의 언어로 작성이 되어 있는지에 대해서 추가 정보를 지정하는 것입니다.</p>
+
+<ul>
+  <li>한국 : ko</li>
+  <li>영어 : en</li>
+  <li>일본어 : ja</li>
+  <li>러시아어 : ru</li>
+  <li>중국어 : zh</li>
+  <li>독일어 : de</li>
+</ul>
+
+<blockquote>
+  <p>lang 속성은 실제 웹 브라우저가 동작하는 데 어떠한 영향도 끼치지 않습니다. 대신 구글과 같은 검색 엔진이 웹 페이지를 탐색할때, 해당 페이지가 어떠한 언어로 만들어져 있는지 쉽게 파악을 하기 위해서 입니다.</p>
+</blockquote>
+
+<h2 id="결합">결합</h2>
+<p>앞에서 작성한 <code class="language-plaintext highlighter-rouge">hello world</code> 문자열을 문서타입 코드와 영역테그를 함께 사용하여  html 문서를 다시 작성을 합니다.</p>
+
+<p>파일명 : hello-02.html</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span> 
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        Hello World
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p><img src="./img/html5.png" alt="hello" /></p>
+
+<h2 id="확인">확인</h2>
+<p>다시 작성한 html 문서를 브라우저에서 확인을 합니다.</p>
+
+<p>이전과 다른 점은 없습니다.
+하지만 html 웹 구조에 맞에 정확히 문서를 작성을 하였을뿐입니다.</p>
+
+<p>html 문서 규격에 맞추어 코드를 작성을 해야만 , 예상되지 못한 문제를 방지하고
+정확한 화면 출력이 가능합니다.</p>
+
+            </div> 
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+   
+</body>
+</html>

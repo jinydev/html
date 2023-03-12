@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JinyDev CSS</title>
+
+    <link rel="stylesheet" href="github-markdown.css">
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        .markdown-body h1 {
+            padding-bottom: 5px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .markdown-body h2 {
+            padding-top: 10px;
+        }
+
+        .markdown-body h3 {
+            padding-top: 5px;
+        }
+
+        .markdown-body h4 {
+            padding-top: 3px;
+        }
+
+        .markdown-body h5 {
+            padding-top: 2px;
+        }
+
+        .markdown-body h6 {
+            padding-top: 1px;
+        }
+
+
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <header>
+            <a href="/">프로트엔드 개발을 위한 HTML 학습하기</a>
+        </header>
+        <main>
+            <div class="markdown-body">
+                <h1 id="html-head-영역">HTML head 영역</h1>
+
+<p>HTML은 <code class="language-plaintext highlighter-rouge">head</code>테그를 통하여 페이지의 다양한 정보를 추가합니다.</p>
+
+<p>head는 다양한 문서의 정보를 담고 있습니다.</p>
+
+<p>head 테그의 정보는 브라우저 화면에 출력을 하지 않지만, 문서가 어떤 정보와 동작을 추가로 필요하는지에 대한 정보를 입력합니다.</p>
+
+<p>문서의 정보를 출력합니다.</p>
+
+<h2 id="head-테그">head 테그</h2>
+<p>head 영역은 <code class="language-plaintext highlighter-rouge">&lt;head&gt;&lt;/head&gt;</code> 테그로 감싸져 있습니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span> 
+<span class="nt">&lt;/head&gt;</span>
+</code></pre></div></div>
+<h2 id="head-내용">head 내용</h2>
+<p>화면에 보이지 않는 
+문서의 환경, 설정에 관련된 테그를 입력을 합니다.</p>
+
+<ul>
+  <li>타이틀 (title)</li>
+  <li>메타 (meta)</li>
+  <li>스타일 (style)</li>
+  <li>자바스크립트 (script)</li>
+  <li>링크 (link)</li>
+  <li>기본경로 (base)</li>
+</ul>
+
+<h2 id="타이틀">타이틀</h2>
+<p>해더에는 문서의 제목을 제공하기 위하여 title 테그를 사용할 수 있습니다.</p>
+
+<p>타이틀 테그는 head 영역안에 선언을 해주도록 합니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;title&gt;</span>hello world 페이지 입니다.<span class="nt">&lt;/title&gt;</span>
+</code></pre></div></div>
+
+<h2 id="meta-테그">Meta 테그</h2>
+
+<h2 id="title">title</h2>
+<p>페이지의 제목을 표시하는 테그 입니다.head 안에 선언을 합니다.
+브라우저 상단에 페이지 타이들 제목이 출력 됩니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;title&gt;</span>페이지 제목입니다.<span class="nt">&lt;/title&gt;</span>
+</code></pre></div></div>
+
+<p>낭독기에서도 제일 먼저 읽어 주는 것이 타이틀 입니다.</p>
+
+<blockquote>
+  <p>주의할점
+타이틀에 특수문자는 삽입하지 않습니다.</p>
+</blockquote>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;title&gt;</span>현재위치 - 타이틀<span class="nt">&lt;/title&gt;</span>
+</code></pre></div></div>
+
+<p>순서로 지정하는 것을 추천합니다.</p>
+
+<h2 id="파비콘">파비콘</h2>
+
+<p>파비콘 아이콘을 출력합니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;lin</span> <span class="na">rel=</span><span class="s">"shortcut"</span> <span class="na">href=</span><span class="s">"/favicon.ico"</span> <span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<h2 id="base">base</h2>
+<p>문서 안에서 상대 url를 사용할때 기준이 되는 url을 말합니다.
+<code class="language-plaintext highlighter-rouge">base</code>테그는 하나만 존재합니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;base</span> <span class="na">href=</span><span class="s">"/asserts/images"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<h2 id="link">link</h2>
+
+<p>외부 리소스와의 관계를 명시합니다. 보통 css 스타일을 별도의 파일로 작성을 하는 경우 <code class="language-plaintext highlighter-rouge">link</code>테그를 사용합니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/style.css"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<p>또한 파비콘을 출력할때도 link 테그를 사용합니다.</p>
+
+<h2 id="style">style</h2>
+
+<p>css 스타일을 선언할때 사용합니다.</p>
+
+<h2 id="script">script</h2>
+
+<p>자바스크립트의 코드를 삽입해야 하는 경우 사용합니다.</p>
+
+<h2 id="meta">meta</h2>
+
+<p>메트 테그는 SNS등에 계시될때 최적화된 데이터를 출력할 수 있도록 설정하는 정보값 입니다.</p>
+
+
+            </div> 
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+   
+</body>
+</html>

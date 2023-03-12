@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JinyDev CSS</title>
+
+    <link rel="stylesheet" href="github-markdown.css">
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        .markdown-body h1 {
+            padding-bottom: 5px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .markdown-body h2 {
+            padding-top: 10px;
+        }
+
+        .markdown-body h3 {
+            padding-top: 5px;
+        }
+
+        .markdown-body h4 {
+            padding-top: 3px;
+        }
+
+        .markdown-body h5 {
+            padding-top: 2px;
+        }
+
+        .markdown-body h6 {
+            padding-top: 1px;
+        }
+
+
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <header>
+            <a href="/">프로트엔드 개발을 위한 HTML 학습하기</a>
+        </header>
+        <main>
+            <div class="markdown-body">
+                <h2 id="폼form">폼(form)</h2>
+<p>폼은 온라인 서식을 구현할때 사용되는 요소들 입니다.</p>
+
+<h3 id="form">form</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form&gt;</span>
+내용
+<span class="nt">&lt;/form&gt;</span>
+</code></pre></div></div>
+
+<p>폼 요소 자체가 브라우저에 표시를 하지 않습니다. 폼 요소안에 들어있는 내용만을 출력합니다.</p>
+
+<h4 id="속성">속성</h4>
+
+<ul>
+  <li>
+    <p>action : 폼이 전송하고자 하는 url</p>
+  </li>
+  <li>
+    <p>method : 폼의 정보를 전달하는 방법
+get/post로 선택합니다.</p>
+  </li>
+</ul>
+
+<h3 id="fieldset">fieldset</h3>
+<p>폼 요소의 그룹을 지정합니다. 필드셋을 지정하게 되면, 그룹화된 요소들 주위에 테두리가 표시됩니다.
+필드셋과 같이 제목을 정의하기 위해서 legend 테그를 사용합니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form&gt;</span>
+    <span class="nt">&lt;fieldset&gt;</span>
+        <span class="nt">&lt;legend&gt;</span>필드셋 제목<span class="nt">&lt;/legend&gt;</span>
+        내용...
+    <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre></div></div>
+
+
+            </div> 
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+   
+</body>
+</html>

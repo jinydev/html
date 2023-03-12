@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JinyDev CSS</title>
+
+    <link rel="stylesheet" href="github-markdown.css">
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        .markdown-body h1 {
+            padding-bottom: 5px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .markdown-body h2 {
+            padding-top: 10px;
+        }
+
+        .markdown-body h3 {
+            padding-top: 5px;
+        }
+
+        .markdown-body h4 {
+            padding-top: 3px;
+        }
+
+        .markdown-body h5 {
+            padding-top: 2px;
+        }
+
+        .markdown-body h6 {
+            padding-top: 1px;
+        }
+
+
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <header>
+            <a href="/">프로트엔드 개발을 위한 HTML 학습하기</a>
+        </header>
+        <main>
+            <div class="markdown-body">
+                <h1 id="정의목록">정의목록</h1>
+<p>정의 목록은 특정 용어와 그 정의를 표현할 때 사용하는 태그입니다.</p>
+<blockquote>
+  <p>사전적의미를 표현할때 자주 사용됩니다. 그외에는 잘 사용하지 않는 테그 입니다.</p>
+</blockquote>
+
+<h2 id="difinition-list">Difinition List</h2>
+<p><code class="language-plaintext highlighter-rouge">dl</code>테그는 정의 목록 입니다. 정의목록(Definition List)의 약자입니다.</p>
+
+<p>사전처럼 용어를 설명하는 목록을 만들때 사용합니다.<br />
+예) A는 B이다</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;dl&gt;&lt;/dl&gt;</code>테그는 <code class="language-plaintext highlighter-rouge">dt</code>테그와 <code class="language-plaintext highlighter-rouge">dd</code>테그를 감싸는 역할을 합니다.</p>
+
+<p>dl은 여러개 쌍의 dt/dd를 포함할 수 있습니다.</p>
+
+<h2 id="definition-description">Definition description</h2>
+<p><code class="language-plaintext highlighter-rouge">dd</code> 정의 설명 목록으로 출력이 됩니다. 정의설명(definition description)의 약자입니다. 용어를 설명할때 사용합니다.</p>
+
+<ul>
+  <li>dd : 정의 설명
+describes each term</li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dl&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>what is Web<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>web is ....<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>....<span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span>
+</code></pre></div></div>
+
+<h2 id="definition-term">Definition term</h2>
+<p><code class="language-plaintext highlighter-rouge">dt</code> 정의 용어 목록의 제목과 같이 표시됩니다. 
+정의용어(definition term)의 약자 입니다. 정의되는 용어의 제목을 넣을때 사용한다.</p>
+
+<ul>
+  <li>dt : 용어정의
+defines terms 또는 name</li>
+</ul>
+
+<p>dt /dd 는 순서대로 한개의 묽음으로 처리하여 작성을 해주어야 합니다.
+dd는 한개 이상으로 반드시 같이 정의해 주어야 합니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dl&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>what is Web<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>web is ....<span class="nt">&lt;/dd&gt;</span>
+
+    <span class="nt">&lt;dt&gt;</span>what is interner<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>internet is ....<span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span>
+</code></pre></div></div>
+
+
+            </div> 
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+   
+</body>
+</html>
