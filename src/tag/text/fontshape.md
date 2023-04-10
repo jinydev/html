@@ -1,8 +1,5 @@
 ---
 layout: home
-title: "html5"
-keyword: "html5"
-description: "html을 학습합니다."
 ---
 
 # 글자의 스타일을 지정할 수 있습니다.

@@ -1,0 +1,453 @@
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jiny linux">
+    <meta name="author" content="HojinLee">
+
+    <title>개발자를 위한 Linux - </title>
+    <meta name="title" content="" />
+
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Jiny-Css" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Jiny Study." />
+<meta property="og:description" content="Jiny Study." />
+<link rel="canonical" href="http://localhost:4000/setup/browser/" />
+<meta property="og:url" content="http://localhost:4000/setup/browser/" />
+<meta property="og:site_name" content="Jiny-Css" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Jiny-Css" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Jiny Study.","headline":"Jiny-Css","url":"http://localhost:4000/setup/browser/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/css/docs.css" rel="stylesheet" />
+
+    <style>
+      h1 a {
+        text-decoration: none;
+      }
+
+      h2 a {
+        text-decoration: none;
+      }
+
+      h3 a {
+        text-decoration: none;
+      }
+
+      h4 a {
+        text-decoration: none;
+      }
+
+      h5 a {
+        text-decoration: none;
+      }
+
+      h6 a {
+        text-decoration: none;
+      }
+
+      img {
+        width: 100%;
+        vertical-align:top
+      }
+
+      strong a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* 스크롤바 커스텀 */
+      /* 임의의 영역 생성 */
+      .scrollBar { 
+
+      }
+
+      /* 아래의 모든 코드는 영역::코드로 사용 */
+      .scrollBar::-webkit-scrollbar {
+          width: 7px;  /* 스크롤바의 너비 */
+      }
+
+      .scrollBar::-webkit-scrollbar-thumb {
+          height: 30%; /* 스크롤바의 길이 */
+          background: #cccccc; /* 스크롤바의 색상 */
+          
+          border-radius: 5px;
+      }
+
+      .scrollBar::-webkit-scrollbar-track {
+          background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+      }
+
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4VBPCT3CR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-R4VBPCT3CR');
+    </script>
+
+    <!-- 구글 에드센스 -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3321560028329475"
+    crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg bd-navbar sticky-top">
+    <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
+        <div class="bd-navbar-toggle">
+            <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar"
+                aria-controls="bdSidebar" aria-label="Toggle docs navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                    </path>
+                </svg>
+
+                <span class="d-none fs-6 pe-1">Browse</span>
+            </button>
+        </div>
+
+        <!-- 로고, 모바일시 가운데 정렬 -->
+        <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="jinydev">
+            Home
+        </a>
+
+        <!-- 모바일 좌측메뉴 mobile-right -->
+        <div class="d-flex">
+    <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+            <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+        </svg>
+    </button>
+</div>
+
+<div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
+
+    <div class="offcanvas-header px-4 pb-0">
+    <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">JinyDev</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"
+        data-bs-target="#bdNavbar">
+    </button>
+</div>
+
+<div class="offcanvas-body p-4 pt-0 p-lg-0">
+    <hr class="d-lg-none text-white-50">
+
+    <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
+        <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link py-2 px-0 px-lg-2 active" aria-current="true"
+                href="https://html.jiny.dev">HTML</a>
+        </li>
+        <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link py-2 px-0 px-lg-2 " aria-current="true"
+                href="https://css.jiny.dev"
+                >CSS</a>
+        </li>
+        <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link py-2 px-0 px-lg-2 " aria-current="true"
+                href="https://javascript.jiny.dev"
+                >Javascript</a>
+        </li>
+    </ul>
+    
+    <hr class="d-lg-none text-white-50">
+
+    <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+        <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link py-2 px-0 px-lg-2" href="https://github.com/jinydev/linux" target="_blank"
+                rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="navbar-nav-svg"
+                    viewBox="0 0 512 499.36" role="img">
+                    <title>GitHub</title>
+                    <path fill="currentColor" fill-rule="evenodd"
+                        d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z">
+                    </path>
+                </svg>
+                <small class="d-lg-none ms-2">GitHub</small>
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+    </nav>
+</header>
+
+    <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
+    <aside class="bd-sidebar scrollBar">
+        <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">학습목차</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdSidebar"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <!-- 네비게이션 -->
+            <nav class="bd-links w-100 " id="bd-docs-nav" aria-label="Docs navigation">
+	<ul class="bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2 ">
+
+    <li class="bd-links-group py-2">
+      <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+        HTML
+      </strong>
+      <ul class="list-unstyled fw-normal pb-2 small">
+        <li>
+          <a href="/setup" class="bd-links-link d-inline-block rounded">개발환경</a>
+        </li>
+        <li>
+          <a href="/html" class="bd-links-link d-inline-block rounded">문서와 요소</a>
+        </li>
+        <li>
+          <a href="/basic" class="bd-links-link d-inline-block rounded">기초</a>
+        </li>
+        <li>
+          <a href="/tag" class="bd-links-link d-inline-block rounded">테그</a>
+        </li>
+        <li>
+          <a href="/layout" class="bd-links-link d-inline-block rounded">레이아웃</a>
+        </li>
+        <li>
+          <a href="/semantic" class="bd-links-link d-inline-block rounded">시맨틱</a>
+        </li>
+        <li>
+          <a href="/multimedia" class="bd-links-link d-inline-block rounded">미디어</a>
+        </li>
+        <li>
+          <a href="/form" class="bd-links-link d-inline-block rounded">폼</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="bd-links-group py-2">
+      <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+        CSS
+      </strong>
+      <ul class="list-unstyled fw-normal pb-2 small">
+      </ul>
+    </li>
+
+    <li class="bd-links-group py-2">
+      <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+        Javascript
+      </strong>
+      <ul class="list-unstyled fw-normal pb-2 small">
+      </ul>
+    </li>
+
+
+
+
+
+
+
+    
+	</ul>
+</nav>
+        </div>
+        </div>
+    </aside>
+
+    <main class="bd-main order-1">
+    <div class="bd-content ps-lg-2">
+    <h1 id="웹-브라우저">웹 브라우저</h1>
+<p>웹사이트를 접속하여 문서 내용을 보기 위해서는 브라우저가 필요로 합니다.<br />
+브라우저는 인터넷 네트워크를 통하여 서버에 접속을 합니다. 서버에서 요청한 페이지를 읽어서 이를 화면에 출력을 합니다.</p>
+
+<h2 id="웹-브라우저의-종류">웹 브라우저의 종류</h2>
+<p>웹페이지를 확인할 수 있는 브라우저는 다양하게 존재합니다. 
+다음을 포함하여 여러 유형의 웹 브라우저가 있습니다.</p>
+
+<ul>
+  <li>
+    <p>데스크톱 브라우저: Google Chrome, Mozilla Firefox, Microsoft Edge 및 Apple Safari와 같이 데스크톱 및 랩톱 컴퓨터에서 사용되는 기존 브라우저입니다.</p>
+  </li>
+  <li>
+    <p>모바일 브라우저: 스마트폰 및 태블릿과 같은 모바일 장치에서 사용하도록 설계된 브라우저입니다. 예를 들어 모바일용 Google 크롬, iOS용 Safari, 모바일용 Firefox가 있습니다.</p>
+  </li>
+  <li>
+    <p>텍스트 기반 브라우저: Lynx 및 w3m과 같이 텍스트만 표시하고 그래픽 콘텐츠를 지원하지 않는 브라우저입니다.</p>
+  </li>
+  <li>
+    <p>콘솔 브라우저: 명령줄 인터페이스에서 실행되고 자동화, 테스트 및 기타 특수 목적에 사용되는 브라우저입니다. 예를 들면 cURL 및 wget이 있습니다.
+임베디드 브라우저: 비디오 게임 콘솔, 스마트 TV, 전자책 리더와 같은 다른</p>
+  </li>
+  <li>
+    <p>소프트웨어 애플리케이션에 내장된 브라우저입니다.</p>
+  </li>
+  <li>
+    <p>대체 브라우저: 소규모 회사나 커뮤니티에서 개발한 브라우저로 개인 정보 보호, 보안 또는 고유한 기능에 중점을 둡니다. 예를 들면 Brave, Vivaldi 및 Tor 브라우저가 있습니다.</p>
+  </li>
+</ul>
+
+<h2 id="네스케이프">네스케이프</h2>
+<p>넷스케이프(Netscape)라고도 하는 넷스케이프 내비게이터(Netscape Navigator)는 최초의 상용 웹 브라우저 중 하나였으며 1994년에 처음 출시되었습니다. 넷스케이프 커뮤니케이션즈 코퍼레이션(Netscape Communications Corporation)에서 개발했으며 나중에 AOL에 인수되었습니다.</p>
+
+<p>Netscape Navigator는 Mozilla 코드베이스에 구축되었으며 Gecko 렌더링 엔진을 사용했습니다. HTML, CSS 및 JavaScript를 포함한 많은 웹 기술을 지원했으며 탭 브라우징, 북마크 및 확장 지원과 같은 기능이 있었습니다.</p>
+
+<p>Netscape는 웹 초기의 주요 업체였으며 오늘날에도 여전히 사용되고 있는 많은 기능과 표준을 대중화하는 데 도움을 주었습니다. 그러나 마이크로소프트의 인터넷 익스플로러와의 치열한 경쟁에 직면했고 결국 시장점유율을 잃어 결국 몰락하게 됐다.</p>
+
+<p>Netscape는 2008년에 결국 중단되었고 그 소스 코드는 Mozilla Firefox라는 이름으로 오픈 소스 소프트웨어로 공개되었습니다. Netscape Navigator의 많은 기능과 디자인 선택 사항이 오늘날 최신 웹 브라우저에 그대로 남아 있습니다.</p>
+
+<h2 id="인터넷-익스플로어-와-앳지">인터넷 익스플로어 와 앳지</h2>
+
+<ul>
+  <li>익스플로어</li>
+  <li>앳지</li>
+</ul>
+
+<h3 id="익스플로어">익스플로어</h3>
+<p>윈도우의 운영체제의 경우 기본적으로 <code class="language-plaintext highlighter-rouge">익스플로어</code> 브라우저가 기본적으로 탑제가 되어 있습니다.</p>
+
+<p>인터넷 익스플로러(Internet Explorer)는 <code class="language-plaintext highlighter-rouge">마이크로소프트사</code>가 개발한 웹브라우저로 <code class="language-plaintext highlighter-rouge">1995</code>년 처음 출시됐다. 마이크로소프트의 윈도우 운영체제에 수년간 포함된 기본 브라우저였으며 당시 가장 널리 사용되는 브라우저 중 하나였다.</p>
+
+<p>Internet Explorer는 최신 웹 표준을 지원하도록 시간이 지남에 따라 업데이트된 Trident 렌더링 엔진을 사용합니다. HTML, CSS 및 JavaScript를 포함한 많은 웹 기술을 지원하며 팝업 차단 기능이 내장되어 있고 확장 기능을 지원합니다.</p>
+
+<p>Internet Explorer는 Windows 운영 체제 및 Office 제품군과 같은 다른 Microsoft 제품과의 통합으로 잘 알려져 있습니다. 또한 사용자가 웹 페이지에서 대화형 콘텐츠를 실행할 수 있도록 하는 ActiveX 컨트롤과 내장 RSS 리더와 같은 기능도 포함되어 있습니다.</p>
+
+<p>그러나 Internet Explorer는 느린 성능, 보안 취약성 및 최신 웹 표준에 대한 지원 부족으로 인해 비판을 받아 왔습니다. 이후 Microsoft는 Internet Explorer를 새로운 웹 브라우저인 Microsoft Edge로 교체했습니다. 이 브라우저는 Chromium 엔진을 기반으로 하며 보다 현대적인 브라우징 경험을 제공합니다.</p>
+
+<h3 id="엣지-브라우저">엣지 브라우저</h3>
+<p>Microsoft Edge는 Microsoft에서 개발하고 2015년에 처음 출시된 웹 브라우저입니다. Microsoft의 Windows 10 운영 체제에 포함된 기본 브라우저이며 macOS, iOS 및 Android 장치에서도 사용할 수 있습니다.</p>
+
+<p>Microsoft Edge는 Chromium 오픈 소스 프로젝트를 기반으로 하며 Google Chrome에서도 사용되는 Blink 렌더링 엔진을 사용합니다. HTML, CSS 및 JavaScript를 포함한 많은 웹 기술을 지원하며 팝업 차단 기능이 내장되어 있고 확장 기능을 지원합니다.</p>
+
+<p>Microsoft Edge의 주요 기능 중 하나는 Bing 검색 및 OneDrive 클라우드 스토리지와 같은 Microsoft 서비스와의 통합입니다. 또한 사용자가 나중에 참조할 수 있도록 웹 콘텐츠를 저장하고 구성할 수 있는 컬렉션과 보다 능률적인 읽기 환경을 위해 웹 페이지에서 광고와 방해 요소를 제거하는 읽기용 보기와 같은 기능을 제공합니다.</p>
+
+<p>Microsoft Edge는 추적 방지 및 기본 제공 암호 관리자와 같은 기능을 통해 개인 정보 보호 및 보안에 중점을 둔 것으로도 알려져 있습니다. 또한 사용자가 웹 페이지에 대한 읽기 경험을 사용자 정의할 수 있는 몰입형 리더와 사용자가 스크린샷을 찍고 웹 콘텐츠를 저장할 수 있는 웹 캡처와 같은 기능을 제공합니다.</p>
+
+<p>전반적으로 Microsoft Edge는 많은 유용한 기능과 Microsoft의 서비스 생태계와의 긴밀한 통합을 통해 현대적이고 빠른 브라우징 경험을 제공합니다.</p>
+
+<h2 id="파이어폭스">파이어폭스</h2>
+<p>Firefox는 Mozilla Foundation에서 개발한 무료 오픈 소스 웹 브라우저입니다. 2004년에 처음 출시되었으며 이후 Windows, macOS, Linux 및 모바일 장치에서 사용할 수 있는 버전으로 전 세계에서 가장 인기 있는 웹 브라우저 중 하나가 되었습니다.</p>
+
+<p>Firefox는 Gecko 렌더링 엔진을 기반으로 하며 빠르고 응답성이 뛰어난 브라우징 경험을 제공합니다. HTML, CSS 및 JavaScript를 포함한 많은 웹 기술을 지원하며 기본 제공 작업 관리자, 팝업 차단기 및 확장 지원 기능이 있습니다.</p>
+
+<p>Firefox는 알려진 추적기 및 지문 사용자를 차단하는 향상된 추적 보호 및 내장된 암호 관리자와 같은 기능을 통해 사용자 개인 정보 보호 및 보안에 중점을 둔 것으로 유명합니다. 또한 사용자가 더 나은 구성을 위해 탭을 그룹화할 수 있는 탭 그룹화와 내장된 스크린샷 도구와 같은 기능을 제공합니다.</p>
+
+<p>Firefox는 또한 내장된 읽기 목록 및 콘텐츠 검색 서비스인 Pocket과 사용자가 자신의 책갈피, 기록 및 여러 장치에서 열린 탭에 액세스할 수 있는 동기화와 같은 기능을 제공합니다. 또한 Firefox는 사용자가 브라우징 경험을 향상시키기 위해 사용할 수 있는 많은 추가 기능과 테마를 통해 사용자 정의가 가능합니다.</p>
+
+<h2 id="사파리">사파리</h2>
+<p>맥 운영체제의 경우 <code class="language-plaintext highlighter-rouge">사파리</code> 브라우저가 기본적으로 탑제가 되어 있습니다.</p>
+
+<p>Safari는 Apple Inc.에서 macOS 및 iOS 운영 체제용으로 개발한 웹 브라우저입니다. 2003년에 처음 출시되었으며 이후 특히 Apple 기기에서 가장 인기 있는 브라우저 중 하나가 되었습니다.</p>
+
+<p>Safari는 다른 많은 웹 브라우저를 구동하는 WebKit 엔진을 기반으로 하며 빠르고 반응이 빠른 브라우징 경험을 제공합니다. HTML, CSS 및 JavaScript를 포함한 많은 웹 기술을 지원하며 팝업 차단기, 리더 모드 및 확장 지원과 같은 기능이 내장되어 있습니다.</p>
+
+<p>Safari에는 책갈피, 읽기 목록 및 기타 데이터를 장치 간에 동기화하기 위한 Apple의 iCloud 서비스와의 통합과 같은 Apple 장치 고유의 기능도 포함되어 있습니다. 또한 Handoff 및 Continuity와 같은 기능이 포함되어 있어 사용자가 한 장치에서 검색을 시작하고 다른 장치에서 계속할 수 있습니다. Safari는 지능형 추적 방지 및 샌드박싱과 같은 기능을 통해 사용자 개인 정보 보호 및 보안에 중점을 두어 악성 코드가 사용자 시스템에 액세스하는 것을 방지하는 것으로 유명합니다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">파이어폭스</code> 브라우저를 사용하기 위해서는 별도로 다운로드 하여 설치를 하여야 합니다.</p>
+
+<h2 id="크롬"><a href="chrome">크롬</a></h2>
+<p>Google 크롬은 Google에서 개발한 무료 오픈 소스 웹 브라우저입니다. 2008년에 처음 출시되었으며 이후 Windows, macOS, Linux 및 모바일 장치에서 사용할 수 있는 버전으로 전 세계에서 가장 인기 있는 웹 브라우저 중 하나가 되었습니다.</p>
+
+<p>Chrome은 Blink 렌더링 엔진과 V8 JavaScript 엔진을 기반으로 구축된 빠르고 반응이 빠른 브라우징 경험으로 유명합니다. HTML, CSS 및 JavaScript를 포함한 많은 웹 기술을 지원하며 기본 제공 작업 관리자, 팝업 차단기 및 확장 지원 기능이 있습니다.</p>
+
+<p>Chrome의 가장 주목할만한 기능 중 하나는 검색, Gmail 및 Google 드라이브를 포함한 Google 서비스와의 긴밀한 통합입니다. 또한 사용자가 여러 장치에서 열린 탭에 액세스할 수 있는 탭 동기화와 다른 언어로 된 웹 페이지에 대한 내장 번역 기능과 같은 기능을 제공합니다.</p>
+
+<p>Chrome은 자동 업데이트, 웹 콘텐츠 샌드박싱, HTTPS 암호화 지원 등 강력한 보안 기능으로 유명합니다. 또한 잠재적으로 위험한 웹 사이트에 대해 사용자에게 경고하는 세이프 브라우징 및 암호 관리자와 같은 기능을 제공합니다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">크롬</code> 브라우저를 사용하기 위해서는 별도로 다운로드 하여 설치를 하여야 합니다.</p>
+
+<h2 id="개발자-도구">개발자 도구</h2>
+<p>인터넷 웹 브라우저는 다양한 종류들이 존재 합니다.</p>
+
+<h3 id="개발자도구">개발자도구</h3>
+
+<p>최신의 웹브라우저는 <code class="language-plaintext highlighter-rouge">개발자도구</code> 들이 포함되어 있습니다. 개발자의 도구를 이용하면 작성한 html이 화면에 어떻게 출력이 되는지, 네트워크의 연결 상태는 어떤지를 한눈에 파악을 할 수 있습니다.</p>
+
+
+    <div>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3321560028329475"
+       crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-format="fluid"
+            data-ad-layout-key="-fb+5w+4e-db+86"
+            data-ad-client="ca-pub-3321560028329475"
+            data-ad-slot="6043271504"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>  
+</div>
+
+    
+
+
+
+    </main>
+</div>
+
+    <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+    <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+
+      <div class="row">
+
+        <div class="col-lg-3 mb-3">
+          <a class="d-inline-flex align-items-center mb-2 text-body-secondary text-decoration-none" href="/" >
+
+            <span class="fs-5">JinyDev</span>
+          </a>
+          <ul class="list-unstyled small">
+            <li class="mb-2">지니와 함께 다양한 ICT 기술을 학습합니다.</li>
+            <li class="mb-2">Code licensed MIT</li>
+            <li class="mb-2">Currently v0.0.1</li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+          <h5>FrontEnd</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="https://html.jiny.dev">HTML</a></li>
+            <li class="mb-2"><a href="https://css.jiny.dev">CSS</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Language</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="https://php.jiny.dev">PHP</a></li>
+            <li class="mb-2"><a href="https://javascript.jiny.dev">Javascript</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>DevOps</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="https://linux.jiny.dev">Linux</a></li>
+            <li class="mb-2"><a href="https://window.jiny.dev">Windows</a></li>
+            <li class="mb-2"><a href="/">Mac</a></li>
+          </ul>
+
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="https://git.jiny.dev">Git</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Hardware</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="https://arduino.jiny.dev">Arduino</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  </body>
+</html>
